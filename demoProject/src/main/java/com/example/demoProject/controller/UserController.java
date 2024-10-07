@@ -29,6 +29,7 @@ public class UserController {
         return userService.saveUser(users);
     }
 
+
     @PutMapping("/{id}")
         public Optional<User> updateUserById(@PathVariable int id, @RequestBody User updateuser) {
         return userService.updateUserById(id, updateuser);
